@@ -41,7 +41,7 @@
 
 ---
 
-#### Add headers for the two categories
+#### Add headers for the two categories (*Optional for presentation purposes)
 <img src='images/SFheader.png'>
 
 ---
