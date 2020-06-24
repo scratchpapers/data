@@ -92,10 +92,13 @@
 
 <img src='images/SCraw.png'>
 
+---
+
 ### Clean Up Data : Remove 'nan', change column names, multiply % by 100 to make it out of 100%, change significant figures on % change 
 
 <img src='images/SCcleaned.png'>
 
+---
 ### Add headers for the two categories
 
 <img src='images/SCheader.png'>
