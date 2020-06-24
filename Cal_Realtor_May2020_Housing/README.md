@@ -38,7 +38,7 @@
 <img src='images/SFcleaned.png'>
 
 #### Add headers for the two categories
-<img src='images/SFBayheader.png'>
+<img src='images/SFheader.png'>
 
 ---
 ### 1 - Year to Year Median Sold Price (May-2019 / May-2020)
@@ -75,7 +75,7 @@
 ---
 
 ### 6 - Month to Month Sales Change %  (Apr-2020 / May-2020)
-<img src='images/SFBayMTMsalesperc.png'>
+<img src='images/SFMTMsalesperc.png'>
 
 #### Overall, most counties saw a decrease in number of sales with about 4 counties showing greater than 15% loss in sales. However, Marin county had 40%+ increase in sales while San Mateo also saw an incease of around 20%
 ---
