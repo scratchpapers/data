@@ -1,3 +1,5 @@
+<img src="python.png">
+
 ## Current Sales & Price Statistics for California Realtor Single-Family Home Sales in May 2020 from publicly available data
 
 #### Source: https://www.car.org/marketdata/data/countysalesactivity
