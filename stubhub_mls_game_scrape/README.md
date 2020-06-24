@@ -16,9 +16,9 @@ Website URL : https://www.stubhub.com/la-galaxy-tickets/performer/12587/
 
 <img src='images/Sample_Games_Site.png'>
 
-#### When the scraper is run, the following result is shown
+#### When the scraper is run, the following result is shown. It scrapes info such as Home Team, Away Team, GameDate, GameName, Lowest Price ticket available, link to get the tickets, etc. This can be further expanded to get ticketing information
 
 <img src='images/Sample_Games_Output.png'>
 
 
-#### This mini project was done just for few MLS games, but the code can be expanded to get the ticket information for those games as well
+#### This mini project was done just for few MLS games, but the code can be expanded to get the ticket information for more teams. 4 of the teams are included in this example
