@@ -17,7 +17,7 @@
 
 ---
 
-### Data is dirty when we load into pandas so we have to clean them up. First we need to pick out the dataframe where it has SF Bay Area and SO Cal data
+### Data is dirty when we load it into pandas so we have to clean them up. First we need to pick out the dataframe where it has SF Bay Area and SO Cal data
 
 <img src='images/dataframeraw.png'>
 
