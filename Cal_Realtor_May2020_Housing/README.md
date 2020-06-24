@@ -17,25 +17,10 @@
 
 ---
 
-### Data is dirty when we load it into pandas so we have to clean them up. First we need to pick out the dataframe where it has SF Bay Area and SO Cal data
+### Data is dirty when we load into pandas so we have to clean them up. First we need to pick out the dataframe where it has SF Bay Area and SO Cal data
 
 <img src='images/dataframeraw.png'>
 
----
-
-### 1 - SF BAY AREA : Year to Year Median Sold Price (May-2019 / May-2020)
-### 2 - SF BAY AREA : Year to Year Median Sold Price Change % (May-2019 / May-2020)
-### 3 - SF BAY AREA : Year to Year % Change in Sales (May-2019 / May-2020)
-### 4 - SF BAY AREA : Month to Month Median Sold Price (Apr-2020 / May-2020)
-### 5 - SF BAY AREA : Month to Month Median Sold Price Change % (Apr-2020 / May-2020)
-### 6 - SF BAY AREA : Month to Month Sales Change %  (Apr-2020 / May-2020)
-
-### 7 - SO CAL AREA : Year to Year Median Sold Price (May-2019 / May-2020)
-### 8 - SO CAL AREA : Year to Year Median Sold Price Change % (May-2019 / May-2020)
-### 9 - SO CAL AREA : Year to Year % Change in Sales (May-2019 / May-2020)
-### 10 - SO CAL AREA : Month to Month Median Sold Price (Apr-2020 / May-2020)
-### 11 - SO CAL AREA : Month to Month Median Sold Price Change % (Apr-2020 / May-2020)
-### 12 - SO CAL AREA : Month to Month Sales Change %  (Apr-2020 / May-2020)
 ---
 
 ### SF BAY AREA : ANALYSIS AND VISUALIZATION OF EXISTING SINGLE-FAMILY HOMES
@@ -114,7 +99,7 @@
 <img src='images/SCcleaned.png'>
 
 ---
-### Add headers for the two categories (*Optional for presentation purposes)
+### Add headers for the two categories
 
 <img src='images/SCheader.png'>
 
