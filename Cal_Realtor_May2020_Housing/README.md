@@ -14,14 +14,19 @@
 ### Sample Raw Excel Data of Single Family Homes Sales and Price Change
 
 <img src='images/SFHsample.png'>
+
 ---
+
 ### Data is dirty when we load into pandas so we have to clean them up. First we need to pick out the dataframe where it has SF Bay Area and SO Cal data
 
 <img src='images/dataframeraw.png'>
+
 ---
 
 ### SF BAY AREA : ANALYSIS AND VISUALIZATION OF EXISTING SINGLE-FAMILY HOMES
+
 ---
+
 ### SAN FRANCISCO BAY COUNTIES 
 <img src='images/SFBayCounties.gif'>
 
@@ -29,11 +34,15 @@
 
 <img src='images/SFBayraw.png'>
 
+---
+
 #### Clean Up Data : Remove 'nan', change column names, multiply % by 100 to make it out of 100%, change significant figures on % change 
 <img src='images/SFcleaned.png'>
 
-#### Add headers for the two categories
-<img src='images/SFBayheader.png'>
+---
+
+#### Add headers for the two categories (*Optional for presentation purposes)
+<img src='images/SFheader.png'>
 
 ---
 ### 1 - Year to Year Median Sold Price (May-2019 / May-2020)
@@ -70,7 +79,7 @@
 ---
 
 ### 6 - Month to Month Sales Change %  (Apr-2020 / May-2020)
-<img src='images/SFBayMTMsalesperc.png'>
+<img src='images/SFMTMsalesperc.png'>
 
 #### Overall, most counties saw a decrease in number of sales with about 4 counties showing greater than 15% loss in sales. However, Marin county had 40%+ increase in sales while San Mateo also saw an incease of around 20%
 ---
@@ -83,10 +92,13 @@
 
 <img src='images/SCraw.png'>
 
+---
+
 ### Clean Up Data : Remove 'nan', change column names, multiply % by 100 to make it out of 100%, change significant figures on % change 
 
 <img src='images/SCcleaned.png'>
 
+---
 ### Add headers for the two categories
 
 <img src='images/SCheader.png'>
