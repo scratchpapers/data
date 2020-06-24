@@ -20,10 +20,13 @@
 ### Data is dirty when we load into pandas so we have to clean them up. First we need to pick out the dataframe where it has SF Bay Area and SO Cal data
 
 <img src='images/dataframeraw.png'>
+
 ---
 
 ### SF BAY AREA : ANALYSIS AND VISUALIZATION OF EXISTING SINGLE-FAMILY HOMES
+
 ---
+
 ### SAN FRANCISCO BAY COUNTIES 
 <img src='images/SFBayCounties.gif'>
 
