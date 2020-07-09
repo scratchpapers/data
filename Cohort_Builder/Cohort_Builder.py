@@ -26,8 +26,7 @@ port = 1234
 
 
 # open sql connection and create cursor
-myConnection = psycopg2.connect(
-    host=hostname, user=username, password=password, dbname=database, port=port)
+myConnection = psycopg2.connect(host=hostname, user=username, password=password, dbname=database, port=port)
 cur = myConnection.cursor()
 
 
@@ -48,8 +47,7 @@ info['customer_id'] = info['customer_id'].astype(int)
 
 # OneDrive Folder
 # Getting the list of files in the folder that end with .csv and does not have '-info' in name since this means the file has been worked on already
-filelist = [x.name for x in list(os.scandir(loc)) if x.is_file(
-) and '.csv' in x.name and '-info' not in x.name]
+filelist = [x.name for x in list(os.scandir(loc)) if x.is_file() and '.csv' in x.name and '-info' not in x.name]
 
 global kerror
 global kperror
@@ -85,8 +83,7 @@ for file in filelist:
                 newlists.append(row)
 
         # stack the list into a column, pick unique accounts_numbers, turn it into a dataframe, drop the newly created index
-        new_df = pd.DataFrame(pd.DataFrame(
-            newlists).stack().unique()).reset_index(drop=True)
+        new_df = pd.DataFrame(pd.DataFrame(newlists).stack().unique()).reset_index(drop=True)
 
         # rename the column as 'accounts' and turn the column account_numbers into integers to join to info
         # and creating a dataframe with unique accounts
@@ -104,31 +101,24 @@ for file in filelist:
         new_dfs.drop_duplicates(subset='customer_id', inplace=True)
 
         # merge (left-join) the unique account_number dataframe with the info dataframe from the cohort builder then sort
-        df3 = pd.merge(new_dfs, info, left_on='customer_id',
-                       right_on='customer_id', how='left')
-        df4 = df3[['customer_id', 'email', 'first_name', 'last_name',
-                   'address1', 'address2', 'city', 'state', 'zip', 'phone']]
+        df3 = pd.merge(new_dfs, info, left_on='customer_id', right_on='customer_id', how='left')
+        df4 = df3[['customer_id', 'email', 'first_name', 'last_name','address1', 'address2', 'city', 'state', 'zip', 'phone']]
 
         # getting dataframes with null and permissions (email permission & unsubscribe)
         dfnull = df4[df4['email'].isnull()]
-        dfnoperm = df4[(df4['email'] == 'EMAIL - UNSUBSCRIBED')
-                       | (df4['email'] == 'EMAIL -  NO PERMISSION')]
-        dfreg = df4[(df4['email'].notnull()) & (
-            df4['email'] != 'EMAIL - UNSUBSCRIBED') & (df4['email'] != 'EMAIL -  NO PERMISSION')]
+        dfnoperm = df4[(df4['email'] == 'EMAIL - UNSUBSCRIBED') | (df4['email'] == 'EMAIL -  NO PERMISSION')]
+        dfreg = df4[(df4['email'].notnull()) & (df4['email'] != 'EMAIL - UNSUBSCRIBED') & (df4['email'] != 'EMAIL -  NO PERMISSION')]
 
         # modifying regular email dataframe to rank it by having address_number then the accounts
         dfreg['addressnumber'] = dfreg['address1'].str.extract(r'(\d+)')
         dfreg['addressnumber'].fillna(99999, inplace=True)
         dfreg['addressnumber'] = dfreg['addressnumber'].astype(int)
 
-        dfreg['rank'] = dfreg.groupby('email')['addressnumber'].rank(
-            ascending=True, method='dense')
-        dfreg['rank1'] = dfreg.groupby('email')['dp_customer_id'].rank(
-            ascending=False, method='dense')
+        dfreg['rank'] = dfreg.groupby('email')['addressnumber'].rank(ascending=True, method='dense')
+        dfreg['rank1'] = dfreg.groupby('email')['dp_customer_id'].rank(ascending=False, method='dense')
 
         dfregfiltered = dfreg[(dfreg['rank1'] == 1) & (dfreg['rank'] == 1)]
-        dfregfiltered.drop(
-            ['rank', 'rank1', 'addressnumber'], axis=1, inplace=True)
+        dfregfiltered.drop(['rank', 'rank1', 'addressnumber'], axis=1, inplace=True)
         dfregfiltered = dfregfiltered.sort_values(by='email')
 
         # combining all the separate dataframes into one, replacing nulls and blank spaces with 'N/A'
@@ -154,8 +144,7 @@ for file in filelist:
 
 
 # CHANGE COHORT ONEDRIVE FOLDER PATH WITH DOUBLE SLASH
-filelist = [x.name for x in list(os.scandir(loc)) if x.is_file(
-) and '.csv' in x.name and '-info' not in x.name]
+filelist = [x.name for x in list(os.scandir(loc)) if x.is_file() and '.csv' in x.name and '-info' not in x.name]
 file = len(filelist)
 
 # ERROR TEXT MESSAGES
@@ -164,16 +153,14 @@ file = len(filelist)
 
 # Case 1: When Cohort Builder is working but unable to remove because the file is opened by someone or account number column has non-numeric entries
 if kerror == 0 and (kverror > 0 or kperror > 0):
-    contents = ("The Cohort is working: " + str(kperror)
-                + " Opened / Unable to Remove csv file(s) and " +
+    contents = ("The Cohort is working: " + str(kperror) + " Opened / Unable to Remove csv file(s) and " +
                 str(kverror) + " file(s) containing non-numeric account_id number. " + now.strftime("%Y-%m-%d %H:%M") + ".")
 
     message = twilioClient.messages.create(body=contents, from_=twilio, to=jy)
 
 # Case 2 : When Cohort Builder is not working for some reason & not due to non-numeric account number or file being opened. Need to investigate
 elif kerror > 0:
-    contents = "The Cohort is not working right now. There are " + \
-        str(file) + " csv file(s) in the folder. Need to investigate. " + \
+    contents = "The Cohort is not working right now. There are " + str(file) + " csv file(s) in the folder. Need to investigate. " + \
         now.strftime("%Y-%m-%d %H:%M") + "."
     message = twilioClient.messages.create(body=contents, from_=twilio, to=jy)
 
