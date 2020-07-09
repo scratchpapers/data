@@ -142,11 +142,6 @@ for file in filelist:
         # Alert when info append is not working and there are csv files in the folder by sending a text message
         kerror += 1
 
-
-# CHANGE COHORT ONEDRIVE FOLDER PATH WITH DOUBLE SLASH
-filelist = [x.name for x in list(os.scandir(loc)) if x.is_file() and '.csv' in x.name and '-info' not in x.name]
-file = len(filelist)
-
 # ERROR TEXT MESSAGES
 # Split up the errors into 2. First is when File is Opened and unable to be removed: Permission Error (permerror).
 # Second is some other error in the system. Need to investigate further.
