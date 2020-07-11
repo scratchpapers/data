@@ -15,27 +15,27 @@ Website: http://www.espn.com/nba/standings/_/group/league<br>
 ### BeautifulSoup was used to scrape the data from the League Standings regular/expanded table and imported into Pandas DataFrame. 
 #### Sample of data scraped from regular standings
 
-<img src="images/data.png" width="400">
+<img src="images/data.png">
 
 ### The data was then cleaned and calculations were made such as 3 PT GAMES % Won, 10 PT GAMES % Won, etc. 
 ### Both dataframe (regular and expanded) were joined together. This is a sample image of the resulting dataframe.
 
-<img src="images/data_processed.png" width="800">
+<img src="images/data_processed.png">
 
 ### This dataframe was further reduced to the final dataframe with columns containing numerical values. 
 
-<img src="images/data_final.png" width="800">
+<img src="images/data_final.png">
 
 ### This is an image of a table showing information about the dataframe
 
-<img src="images/data_info.png" width="600">
+<img src="images/data_info.png">
 
 
 ## Using Seaborn as Visualization Tool using Pandas DataFrame
 
 ### 1) Seaborn Bar Plot showing Team and Winning Percentage for the season in a descending order from left to right
 
-#### This plot shows the winning percentage of each team for the 2017-2018 season
+#### This plot shows the winning percentage of each team for the 2019-2020 season
 
 <img src="images/nba_standing.png">
 
