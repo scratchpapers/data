@@ -30,23 +30,24 @@
 
 ### * Data was then imported into and visualized using Tableau
 
+#### This image is an example visualization of "Profit / Loss Sessions by Value Group"
 ![Tableau Image](tableau.jpg)
 
-#### This image is an example visualization of "Profit / Loss Sessions by Value Group"
 
 ### * Visualizations using Tableau were then exported to Power Point
 
-![Power Point](powerpoint.PNG)
 #### Power Point Analysis
+![Power Point](powerpoint.PNG)
 
-![Power Point](powerpoint1.PNG)
 #### Power Point Slide showing "Total Revenue by Group"
+![Power Point](powerpoint1.PNG)
 
-![Power Point](powerpoint2.PNG)
 #### Power Point Slide showing "Total Revenue by Value & Group on Weekly Basis: Low & Mid)"
+![Power Point](powerpoint2.PNG)
 
-![Power Point](powerpoint3.PNG)
 #### Power Point Slide showing "Total Profit / Loss Sessions by Bonus Amount on Weekly Basis"
+![Power Point](powerpoint3.PNG)
+
 
 
 ### This was a data analysis done using Excel, MySQL, Tableau and Power Point on a sample Online Casino A/B Testing data
