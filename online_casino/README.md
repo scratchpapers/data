@@ -36,16 +36,20 @@
 
 ### * Visualizations using Tableau were then exported to Power Point
 
-#### Power Point Analysis
+
+#### * Power Point Analysis
 ![Power Point](powerpoint.PNG)
 
-#### Power Point Slide showing "Total Revenue by Group"
+
+#### * Power Point Slide showing "Total Revenue by Group"
 ![Power Point](powerpoint1.PNG)
 
-#### Power Point Slide showing "Total Revenue by Value & Group on Weekly Basis: Low & Mid)"
+
+#### * Power Point Slide showing "Total Revenue by Value & Group on Weekly Basis: Low & Mid)"
 ![Power Point](powerpoint2.PNG)
 
-#### Power Point Slide showing "Total Profit / Loss Sessions by Bonus Amount on Weekly Basis"
+
+#### * Power Point Slide showing "Total Profit / Loss Sessions by Bonus Amount on Weekly Basis"
 ![Power Point](powerpoint3.PNG)
 
 
