@@ -30,7 +30,7 @@
 
 ### Data was then imported into and visualized using Tableau
 
-![Tableau Image](tableau.PNG)
+![Tableau Image](tableau.JPG)
 
 #### This image is an example visualization of "Profit / Loss Sessions by Value Group"
 
