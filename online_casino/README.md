@@ -41,15 +41,15 @@
 ![Power Point](powerpoint.PNG)
 
 
-#### * Power Point Slide showing "Total Revenue by Group"
+#### * Sample Power Point Slide showing "Total Revenue by Group"
 ![Power Point](powerpoint1.PNG)
 
 
-#### * Power Point Slide showing "Total Revenue by Value & Group on Weekly Basis: Low & Mid)"
+#### * Sample Power Point Slide showing "Total Revenue by Value & Group on Weekly Basis: Low & Mid)"
 ![Power Point](powerpoint2.PNG)
 
 
-#### * Power Point Slide showing "Total Profit / Loss Sessions by Bonus Amount on Weekly Basis"
+#### * Sample Power Point Slide showing "Total Profit / Loss Sessions by Bonus Amount on Weekly Basis"
 ![Power Point](powerpoint3.PNG)
 
 
