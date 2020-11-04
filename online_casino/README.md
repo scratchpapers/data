@@ -18,7 +18,38 @@
 
 ### Raw Data Sample in MySQL
 
+#### Data was in Excel. File was imported into MySQL
+
 ![Casino Raw Image](casino_raw.PNG)
+
+### Using SQL, a view was created aggregated by value group and weekly activity
+
+![Casino View Image](casino_view.PNG)
+
+#### Data was ordered by year, month and week, grouped by value group (VIP, High, Medium, Low)
+
+### Data was then imported into and visualized using Tableau
+
+![Tableau Image](tableau.PNG)
+
+#### This image is an example visualization of "Profit / Loss Sessions by Value Group"
+
+### Visualizations using Tableau were then exported to Power Point
+
+![Power Point](powerpoint.PNG)
+#### Power Point Analysis
+
+![Power Point](powerpoint1.PNG)
+#### Power Point Slide showing "Total Revenue by Group"
+
+![Power Point](powerpoint2.PNG)
+#### Power Point Slide showing "Total Revenue by Value & Group on Weekly Basis: Low & Mid)"
+
+![Power Point](powerpoint3.PNG)
+#### Power Point Slide showing "Total Profit / Loss Sessions by Bonus Amount on Weekly Basis"
+
+
+### This was a data analysis done using Excel, MySQL, Tableau and Power Point on a sample Online Casino A/B Testing data
 
 
 
