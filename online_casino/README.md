@@ -16,25 +16,25 @@
 
 * Bonus awarded is just one for each customer
 
-### Raw Data Sample in MySQL
+### * Raw Data Sample in MySQL
 
 #### Data was in Excel. File was imported into MySQL
 
 ![Casino Raw Image](casino_raw.PNG)
 
-### Using SQL, a view was created aggregated by value group and weekly activity
+### * Using SQL, a view was created aggregated by value group and weekly activity
 
 ![Casino View Image](casino_view.PNG)
 
 #### Data was ordered by year, month and week, grouped by value group (VIP, High, Medium, Low)
 
-### Data was then imported into and visualized using Tableau
+### * Data was then imported into and visualized using Tableau
 
-![Tableau Image](tableau.JPG)
+![Tableau Image](tableau.jpg)
 
 #### This image is an example visualization of "Profit / Loss Sessions by Value Group"
 
-### Visualizations using Tableau were then exported to Power Point
+### * Visualizations using Tableau were then exported to Power Point
 
 ![Power Point](powerpoint.PNG)
 #### Power Point Analysis
